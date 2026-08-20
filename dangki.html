@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Đăng kí</title>
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="login">
+            <motion.div class="login-box">
+                <h2>Đăng kí</h2>
+                <form id="register-form">
+                    <motion.div id="form-error" class="error-message"></motion.div>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="Nhập email">
+                    <motion.div id="email-error" class="error-message"></motion.div>
+                    <label for="password">Mật khẩu</label>
+                    <input id="password" type="password" placeholder="Nhập mật khẩu">
+                    <motion.div id="password-error" class="error-message"></motion.div>
+                    <label for="confirm-password">Nhập lại mật khẩu</label>
+                    <input id="confirm-password" type="password" placeholder="Nhập lại mật khẩu">
+                    <motion.div id="confirm-password-error" class="error-message"></motion.div>
+                    <label for="display-name">Tên hiển thị khi bình luận</label>
+                    <input id="display-name" type="text" placeholder="Nhập tên muốn hiển thị khi bình luận">
+                    <motion.div id="display-name-error" class="error-message"></motion.div>
+                    <button type="submit">Đăng kí</button>
+                </form>
+                <motion.div class="register-row">
+                    <p>Bạn đã có tài khoản?</p>
+                    <a class="register" href="dangnhap.html">Đăng nhập ngay</a>
+                </motion.div>
+                <motion.div>
+                    <p class="other-login-text">Hoặc đăng kí bằng</p>
+                    <a class="login-btn" href="https://accounts.google.com"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google Logon" class="logo">Đăng kí với Google</a>
+                    <a class="login-btn" href="https://facebook.com"><img src="img/Facebook_Logo.jpg" alt="Facebook Logo" class="logo">Đăng kí với Facebook</a>
+                </motion.div>
+            </motion.div>
+        </motion.div>
+        <script src="js/dangki.js"></script>
+    </body>
+</html>
